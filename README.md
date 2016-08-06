@@ -6,7 +6,7 @@ may include some signature building utils soon
 ### install
 on `npm install` the module will self-build. the c/c++ code is located within the _/src_ directory.
 
-you may require the [node-gyp](/nodejs/node-gyp) package installed globally to build:
+you may require the [node-gyp](https://github.com/nodejs/node-gyp) package installed globally to build:
 
 `npm install node-gyp -g`
 
@@ -26,9 +26,9 @@ the callback's `err` is truthy when input validation occurs _(note: `iv` must be
 * **`cb(err, encryptedSignature)`** _(Func)_: a callback function to execute when encryption by the moldue has been completed. success when `err` is null. `encryptedSignature` is a buffer containing the encrypted information.
 
 ### example
-the following will read an input buffer read directly from a file, in the real world this will most likely come from an encoded protobuf structure you generated from your api requests.
+the following will read an input buffer read directly from a file, in the real world this will most likely come from an encoded protobuf structure you generated with your api requests.
 ```javascript
-var pogoSignature = require('node-pogo-signature').pogoSignature;
+var pogoSignature = require('node-pogo-signature');
 
 var dump = fs.readFileSync('./signatureBinary.bin');
 var iv = crypto.randomBytes(32);
@@ -45,4 +45,4 @@ pogoSignature.encrypt(dump, iv, function(err, result) {
 ## notes
 
 * contribute whatever you can
-* credit for `encrypt.c` goes to [wchill](/wchill) and friends @ [/r/pkmngodev](https://github.com/pkmngodev/Unknown6)
+* credit for `encrypt.c` goes to [wchill](https://github.com/wchill) and friends @ [/r/pkmngodev](https://github.com/pkmngodev/Unknown6)
