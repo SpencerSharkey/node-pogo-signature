@@ -1,0 +1,20 @@
+{
+    "name": "node-pogo-u6",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "configure": "node-gyp configure",
+        "build": "node-gyp configure && node-gyp build",
+        "postinstall": "node-gyp configure && node-gyp build",
+        "rebuild": "node-gyp rebuild"
+    },
+    "author": "Spencer Sharkey <spencer@sf-n.com>",
+    "devDependencies": {
+        "nan": "^2.3.3",
+        "node-gyp": "^1.0.3"
+    },
+    "dependencies": {
+        "bindings": "^1.2.1"
+    }
+}
