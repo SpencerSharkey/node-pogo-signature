@@ -11,9 +11,11 @@
   },
   "author": "Spencer Sharkey <spencer@sf-n.com>",
   "dependencies": {
-    "nan": "^2.3.3",
-    "node-gyp": "^1.0.3",    
     "bindings": "^1.2.1",
+    "long": "^3.2.0",
+    "nan": "^2.3.3",
+    "node-gyp": "^1.0.3",
+    "protobufjs": "^5.0.1",
     "xxhashjs": "^0.2.1"
   }
 }
