@@ -1,9 +1,9 @@
-var sigUtils = require('./lib/utils');
+var utils = require('./lib/utils');
 var Builder = require('./lib/Builder');
-var sigEncrypt = require('bindings')('node-pogo-signature-encrypt');
 
 module.exports = {
-    utils: sigUtils,
+    utils: utils,
     Builder: Builder,
-    encrypt: sigEncrypt.encrypt
+    encrypt: utils.encrypt,
+    encryptSync: utils.encryptSync
 }
