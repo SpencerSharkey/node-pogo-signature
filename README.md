@@ -4,7 +4,8 @@ signature (aka "unknown6") protobuf builder + encryption for node (now in native
 **includes some easy (still undocumented) signature building helper libs - will document soon**
 
 currently implemented + working in:
-* https://github.com/Armax/Pokemon-GO-node-api
+* https://github.com/cyraxx/pogobuf ( :sparkles: `npm install pogobuf` )
+* https://github.com/Armax/Pokemon-GO-node-api (not available via npm yet )
 
 ## encrypt usage
 ```javascript
