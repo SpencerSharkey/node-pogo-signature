@@ -1,6 +1,6 @@
 {
   "name": "node-pogo-signature",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "an 'unknown6' signature builder for pokemon go node apis - fully native js!",
   "main": "index.js",
   "scripts": {
