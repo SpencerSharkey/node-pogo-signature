@@ -7,7 +7,7 @@ using namespace std;
 using namespace v8;
 using namespace node;
 
-NAN_METHOD(encrypt) {
+NAN_METHOD(encryptMethod) {
     // Validate things
     if (info.Length() < 3) return;
     if (!info[2]->IsFunction()) return;
@@ -43,7 +43,7 @@ NAN_METHOD(encrypt) {
 
     // get our output len (could just do it here)
     size_t outputLen;
-    if (encrypt(input, (size_t)inputLen, iv, (size_t)ivLen, NULL, &outputLen) != 0) {
+    if (encryptMethod(input, (size_t)inputLen, iv, (size_t)ivLen, NULL, &outputLen) != 0) {
         delete input;
         delete iv;
         Local<Value> argv[1] = { Nan::New<String>("encrypt validation failed (iv length must be 32)").ToLocalChecked() };
@@ -53,7 +53,7 @@ NAN_METHOD(encrypt) {
 
     // encrypt
     unsigned char* output = new unsigned char[outputLen];
-    int code = encrypt(input, (size_t)inputLen, iv, (size_t)ivLen, output, &outputLen);
+    int code = encryptMethod(input, (size_t)inputLen, iv, (size_t)ivLen, output, &outputLen);
 
     delete input;
     delete iv;

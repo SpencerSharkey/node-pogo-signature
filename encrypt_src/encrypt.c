@@ -14168,7 +14168,7 @@ void sub_9E9D8(unsigned char *input, unsigned char*output)
 	memcpy(output, temp2, 0x100);
 }
 
-int encrypt(const unsigned char *input, size_t input_size,
+int encryptMethod(const unsigned char *input, size_t input_size,
 	const unsigned char* iv, size_t iv_size,
 	unsigned char* output, size_t * output_size) {
 	unsigned char arr2[256];
