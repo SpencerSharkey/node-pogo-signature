@@ -3,8 +3,8 @@
 
 #include <nan.h>
 
-extern "C" int encrypt(const unsigned char *input, size_t input_size, const unsigned char* iv, size_t iv_size, unsigned char* output, size_t * output_size);
+extern "C" int encryptMethod(const unsigned char *input, size_t input_size, const unsigned char* iv, size_t iv_size, unsigned char* output, size_t * output_size);
 
-NAN_METHOD(encrypt);
+NAN_METHOD(encryptMethod);
 
 #endif
