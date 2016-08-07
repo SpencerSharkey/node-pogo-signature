@@ -1,26 +1,16 @@
 ## node-pogo-signature
 signature (aka "unknown6") encryption bindings for node
 
-may include some signature building utils soon
+includes some easy (still undocumented) signature building helper libs
 
 currently implemented + working in:
 * https://github.com/Armax/Pokemon-GO-node-api
 
-# todo
-* look into native js implementation of encrypt.c (in progress)
-* start writing signature builder (in progress)
-* submit PRs to node apis with signature patches (1 down)
-
-### install
-on `npm install` the module will self-build. the c/c++ code is located within the _/src_ directory.
-
-you may require the [node-gyp](https://github.com/nodejs/node-gyp) package installed globally to build:
-
-`npm install node-gyp -g`
-
 ## usage
 ```javascript
 module.encrypt(<Buffer> input, <Buffer> iv, <function> callback)
+// or
+module.encryptSync(<Buffer> input, <Buffer> iv)
 ```
 ##### Info:
 
@@ -53,4 +43,4 @@ pogoSignature.encrypt(dump, iv, function(err, result) {
 ## notes
 
 * contribute whatever you can
-* credit for `encrypt.c` goes to friends @ [/r/pkmngodev](https://github.com/pkmngodev/Unknown6) (repo is gone)
+* credit for original `encrypt.c` goes to friends @ [/r/pkmngodev](https://github.com/pkmngodev/Unknown6) (repo is gone)
