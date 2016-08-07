@@ -1,5 +1,9 @@
-var NativeExtension = require('bindings')('node-pogo-signature');
+var sigUtils = require('./lib/utils');
+var Signature = require('./lib/Signature');
+var sigEncrypt = require('bindings')('node-pogo-signature-encrypt');
 
 module.exports = {
-    encrypt: NativeExtension.encrypt
+    utils: sigUtils,
+    Signature: Signature,
+    encrypt: sigEncrypt.encrypt
 }
