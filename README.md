@@ -1,6 +1,11 @@
 ## node-pogo-signature
 signature (aka "unknown6") encryption bindings for node
 
+# todo
+* look into native js implementation of encrypt.c
+* start writing signature builder (in progress)
+* submit PRs to node apis with signature patches
+
 may include some signature building utils soon
 
 ### install
@@ -45,4 +50,4 @@ pogoSignature.encrypt(dump, iv, function(err, result) {
 ## notes
 
 * contribute whatever you can
-* credit for `encrypt.c` goes to [wchill](https://github.com/wchill) and friends @ [/r/pkmngodev](https://github.com/pkmngodev/Unknown6)
+* credit for `encrypt.c` goes to friends @ [/r/pkmngodev](https://github.com/pkmngodev/Unknown6) (repo is gone)
