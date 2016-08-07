@@ -10,11 +10,9 @@
     "rebuild": "node-gyp rebuild"
   },
   "author": "Spencer Sharkey <spencer@sf-n.com>",
-  "devDependencies": {
-    "nan": "^2.3.3",
-    "node-gyp": "^1.0.3"
-  },
   "dependencies": {
+    "nan": "^2.3.3",
+    "node-gyp": "^1.0.3",    
     "bindings": "^1.2.1",
     "xxhashjs": "^0.2.1"
   }
