@@ -1,5 +1,5 @@
-var utils = require('./lib/utils');
-var Builder = require('./lib/Builder');
+const Builder = require('./lib/Builder');
+const utils = require('./lib/utils');
 
 module.exports = {
     utils: utils,
