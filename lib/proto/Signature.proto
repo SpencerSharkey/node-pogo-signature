@@ -92,9 +92,9 @@ message Signature {
     bytes unk22 = 22; // possibly replay check. Generation unknown but pointed to by 0001B8614
     uint64 timestamp = 23; // epoch timestamp in ms
     repeated uint64 request_hash = 24; // hashes of each request message in a hashArray - xxhash64
+    int64 unknown25 = 25; // for 0.33 its static -8537042734809897855 or 0x898654dd2753a481 - xxHash64
 
     // Addresses for the corresponding hash functions:
     //    xxHash32              00054D28
     //    xxhash64              000546C8 - Feeds into 00053D40
-
 }
