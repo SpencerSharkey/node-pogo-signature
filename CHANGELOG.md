@@ -1,3 +1,6 @@
+# 2.0.2
+* merged PR #6 https://github.com/SpencerSharkey/node-pogo-signature/pull/6
+
 # 2.0.1
 * `unk22` persists throughout the lifespan of a `Builder` instance (not regenerated each time)
 * `new Builder()` constructor now accepts options object. accepts `initTime` and `unk22`
