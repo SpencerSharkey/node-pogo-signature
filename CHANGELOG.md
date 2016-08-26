@@ -1,3 +1,7 @@
+# 2.0.3
+* merged PR #8 _Adding Builder.setFields to allow setting of additional signature fields_ https://github.com/SpencerSharkey/node-pogo-signature/pull/8
+* merged PR #7 _fixing some fields in the signature.proto_ https://github.com/SpencerSharkey/node-pogo-signature/pull/7
+
 # 2.0.2
 * merged PR #6 https://github.com/SpencerSharkey/node-pogo-signature/pull/6
 
