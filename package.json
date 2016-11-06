@@ -25,6 +25,6 @@
     "dependencies": {
         "long": "^3.2.0",
         "protobufjs": "^5.0.1",
-        "pcrypt": "git:+https://github.com/laverdet/pcrypt"
+        "pcrypt": "laverdet/pcrypt"
     }
 }
