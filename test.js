@@ -2,7 +2,7 @@ var index = require("./index.js");
 var assert = require("assert");
 
 /// SET YOUR HASHING SERVER
-index.utils.useHashingServer("your ip", 1500);
+// index.utils.useHashingServer("your ip", 1500);
 
 /// Simple test to ensure that responses are correct from each value
 
@@ -62,5 +62,6 @@ const builder = new index.Builder({unk22: bytes, time_since_start: 500, time: 14
 builder.setAuthTicket(test, true);
 builder.setLocation(0,0,0);
 builder.encrypt([test], (err, encryptedSig) => {
+    console.log("Builder response " + encryptedSig.toString("hex"));
     assert(encryptedSig.toString("hex") === "000001f4f709274ec09e849273e90957837ee4d0a06dbb6af9aae307535e94af95dfee5153b3664b8339334564e4fd6fcf7acbb599ddcaa29babaa8de7627161014507750ca57b897d07de8b780e555304cce4fa61e54d6ca3a6ef39317af0c611013cdc10f93ed1aeabbaad39682cf57b9c0146ba29424c11bc26cce0778bcdef50aa3e44599b2c20987d23b405e12d04e4b553026d1b3fd9e39d99c86716af880c6db557c1e85ed9db13fe71522da7f3bc2b9d8b0a0a39654e90d667de464a4fd07bca9aca910ac7b88e946d05db38d6276161dbbd8d6358fc9401cf2de012208a0ff6fa7d59f2095538cde6903576163d5ff57d95f441811bebd84cf0daa45d4402319a");
 });
