@@ -2,7 +2,7 @@ var index = require("./index.js");
 var assert = require("assert");
 
 /// SET YOUR HASHING SERVER
-index.utils.useHashingServer("YOUR_SERVER_IP", 1501);
+// index.utils.useHashingServer("YOUR_SERVER_IP", 1501);
 
 /// Simple test to ensure that responses are correct from each value
 
