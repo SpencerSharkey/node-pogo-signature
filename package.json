@@ -1,19 +1,19 @@
 {
     "name": "node-pogo-signature",
-    "version": "2.0.4",
+    "version": "3.0.0",
     "description": "an 'unknown6' signature builder for pokemon go node apis - fully native js!",
-    "author": "Spencer Sharkey <spencer@sf-n.com>",
+    "author": "Kevin McGowan <mcgowan.kevin@gmail.com>",
     "main": "index.js",
     "engines": {
         "node": ">=4.0.0"
     },
-    "homepage": "https://github.com/SpencerSharkey/node-pogo-signature",
+    "homepage": "https://github.com/starkevin/node-pogo-signature",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/SpencerSharkey/node-pogo-signature.git"
+        "url": "git+https://github.com/starkevin/node-pogo-signature.git"
     },
     "bugs": {
-        "url": "https://github.com/SpencerSharkey/node-pogo-signature/issues"
+        "url": "https://github.com/starkevin/node-pogo-signature/issues"
     },
     "keywords": [
         "pokemongo",
@@ -25,6 +25,6 @@
     "dependencies": {
         "long": "^3.2.0",
         "protobufjs": "^5.0.1",
-        "xxhashjs": "^0.2.1"
+        "pcrypt": "laverdet/pcrypt"
     }
 }
