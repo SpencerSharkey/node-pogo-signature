@@ -5,6 +5,62 @@ currently implemented + working in:
 * https://github.com/cyraxx/pogobuf ( :sparkles: `npm install pogobuf` )
 * https://github.com/Armax/Pokemon-GO-node-api ( `npm install pokemon-go-node-api` )
 
+## 0.51 (current)
+As of 0.51 native hashing is currently not supported. This library allows both 0.45 and 0.51. 
+
+#### Upgrading to 0.51
+If you already have a working 0.45 implementation, the only changes that you need to make are the below
+
+```javascript
+builder.version = "0.51";
+builder.useHashingServer("hashing.pogodev.io", 80, "YOUR_KEY", "122");
+```
+
+#### Full working example
+This example uses hardcoded buffers. In a real scenario, you would pass your AuthToken and a list of requests. These can be passed in as encoded protocol's or in their unencoded format.
+```javascript
+/// ==============================
+/// 0.51 API
+/// ==============================
+
+/// Your auth ticket
+const test = new Buffer(24);
+for(let i = 0; i < 24; i++) {
+    test[i] = 0;
+};
+
+/// Fake request
+const test2 = new Buffer(24);
+for(let i = 0; i < 24; i++) {
+    test2[i] = 1;
+};
+
+/// Fake request #2
+const test3 = new Buffer(24);
+for(let i = 0; i < 24; i++) {
+    test3[i] = 2;
+};
+
+/// "Unknown22"
+const bytes = new Buffer(32);
+for(let i = 0; i < bytes.length; i++) {
+    bytes[i] = i;
+};
+
+const builder = new index.Builder({unk22: bytes, time_since_start: 500, time: 1478434897578 });
+builder.version = "0.51";
+builder.useHashingServer("hashing.pogodev.io", 80, "YOUR_KEY", "122");
+builder.setAuthTicket(test, true);
+builder.setLocation(0,0,0);
+builder.encrypt([test, test2, test3], (err, encryptedSig) => {
+    console.log("Builder response " + encryptedSig.toString("hex"));
+    assert(encryptedSig.toString("hex") === "000001f4383d7db58229f72dc0c942eddb3c1cad4c80ef4c1c069bb0154d4f16726c5bb11d3587911fab3ce02aa431e4c3a808751503549b80d6e7e51dc17a7ae71e14f7e0a3af491b200dd94e2f777ce009809aeaa0c25c0e0a761768b2d8a0ab38ac7ec725a095b3bf9ff664251c590d62e457683019fbd975482e55cfe02a99a52bd4a8dabd861d6398b3567e1557663d2f74e85fc61f1b29e33bf98174e24b03f18a76c6e01b4e2b39234c8d151dde8900b144fe557d45fb8b9b5d6126a1150a0eee2e6951faf8f349787ed50121becd65c7cbc7ad85fd0191e25241892e2337631f314c691c37d3661b95f49cc8501b3f766bd480aea58a499c3e9cd109c5aae2569a");
+});
+```
+
+## 0.45 (old, unsafe)
+The below is for 0.45, which is native (or hash server) hashing. It is no longer considered safe.
+
 ## use either a hashing server, or native
 ```javascript
 /// Use hashing
