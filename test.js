@@ -87,7 +87,7 @@ for(let i = 0; i < 24; i++) {
 
 builder = new index.Builder({unk22: bytes, time_since_start: 500, time: 1478434897578 });
 builder.version = "0.51";
-builder.useHashingServer("hashing.pogodev.io", 80, "YOUR_KEY", "122");
+builder.useHashingServer("http://hashing.pogodev.io/api/v121_2/hash", "your_key");
 builder.setAuthTicket(test, true);
 builder.setLocation(0,0,0);
 builder.encrypt([test, test2, test3], (err, encryptedSig) => {
