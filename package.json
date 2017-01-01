@@ -32,6 +32,6 @@
     "dependencies": {
         "long": "^3.2.0",
         "protobufjs": "^5.0.1",
-        "pcrypt": "laverdet/pcrypt"
+        "pcrypt": "starkevin/pcrypt"
     }
 }

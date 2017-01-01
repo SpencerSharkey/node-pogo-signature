@@ -1,9 +1,7 @@
 const Builder = require('./lib/Builder');
-const utils = require('./lib/utils');
+const Utils = require('./lib/utils');
 
 module.exports = {
-    utils: utils,
-    Builder: Builder,
-    encrypt: utils.encrypt,
-    encryptSync: utils.encryptSync
+    Utils: Utils,
+    Builder: Builder
 }
