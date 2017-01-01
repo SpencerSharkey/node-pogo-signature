@@ -1,6 +1,6 @@
 {
     "name": "node-pogo-signature",
-    "version": "3.0.0",
+    "version": "4.0.0",
     "description": "an 'unknown6' signature builder for pokemon go node apis - fully native js!",
     "author": "Spencer Sharkey <spencer@sf-n.com>",
     "contributors": [
