@@ -1,37 +1,38 @@
 {
-    "name": "node-pogo-signature",
-    "version": "4.0.0",
-    "description": "an 'unknown6' signature builder for pokemon go node apis - fully native js!",
-    "author": "Spencer Sharkey <spencer@sf-n.com>",
-    "contributors": [
-        {
-            "name": "starkevin",
-            "email": "mcgowan.kevin@gmail.com",
-            "url": "https://github.com/starkevin"
-        }
-    ],
-    "main": "index.js",
-    "engines": {
-        "node": ">=4.0.0"
-    },
-    "homepage": "https://github.com/SpencerSharkey/node-pogo-signature",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/SpencerSharkey/node-pogo-signature.git"
-    },
-    "bugs": {
-        "url": "https://github.com/SpencerSharkey/node-pogo-signature/issues"
-    },
-    "keywords": [
-        "pokemongo",
-        "unknown6",
-        "niantic",
-        "pokemon",
-        "pogo"
-    ],
-    "dependencies": {
-        "long": "^3.2.0",
-        "protobufjs": "^5.0.1",
-        "pcrypt": "laverdet/pcrypt"
+  "name": "node-pogo-signature",
+  "version": "4.0.0",
+  "description": "an 'unknown6' signature builder for pokemon go node apis - fully native js!",
+  "author": "Spencer Sharkey <spencer@sf-n.com>",
+  "contributors": [
+    {
+      "name": "starkevin",
+      "email": "mcgowan.kevin@gmail.com",
+      "url": "https://github.com/starkevin"
     }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/SpencerSharkey/node-pogo-signature",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpencerSharkey/node-pogo-signature.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SpencerSharkey/node-pogo-signature/issues"
+  },
+  "keywords": [
+    "pokemongo",
+    "unknown6",
+    "niantic",
+    "pokemon",
+    "pogo"
+  ],
+  "dependencies": {
+    "long": "^3.2.0",
+    "pcrypt": "laverdet/pcrypt",
+    "protobufjs": "^5.0.1",
+    "twofish": "github:pogosandbox/twofish"
+  }
 }
