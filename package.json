@@ -32,7 +32,6 @@
   "dependencies": {
     "long": "^3.2.0",
     "pcrypt": "laverdet/pcrypt",
-    "protobufjs": "^5.0.1",
-    "twofish": "github:pogosandbox/twofish"
+    "protobufjs": "^5.0.1"
   }
 }
