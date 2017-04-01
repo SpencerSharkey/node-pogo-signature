@@ -117,3 +117,9 @@ builder.encrypt([test, test2, test3], (err, encryptedSig) => {
         assert(encryptedSig.toString("hex") === "000001f4520d39dacb49c82ae1d407a8f3404ae07b89fd47710ab0da46170f7c005979f32f45bb8908c205e026a54aff92f11956622100c293d497e879bd1e2fec294ad9fdc8cd0a3b4e5bfa1340480ad131c8a2a6c8f64f534b67740398e4eaa81d9002af5e91dd83d7b0cd5a5f3926120be91370471ceae838283b6e89c758fff734b9aee19cde1f55bcf5064d3c1b1f77093bd222fe6b0057f226ddd97de86b2ae1c723fc805e075b372879ba692cc6e00bf616b8262505dbc48d171d77c0150242c060452efccae624425ae7321b95e47a8b8c8999c5d355e8d86a63a22a21746c2404083d4941f9406fcbacceb86719770e5eb3dba985af16ea66f3a650dcf4ce2d92");
     }
 });
+
+/// ==============================
+/// 0.59 API
+/// ==============================
+
+(new index.Utils)
